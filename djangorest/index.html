@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Learning VueJS</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+  <div id="app">
+
+    <p v-bind:id="dynamicishId">{{ computedValue }}</p>
+    <my-comp v-bind:whatever="value"></my-comp>
+
+    <div>
+      <p v-for="ham in hams">{{ham.yo}} {{computedValue}}</p>
+    </div>
+
+    <input v-model="value" type="number" min="0" max="10"/>
+    <!-- <button v-on:click="caluclateComputed">CLICKY!</button> -->
+
+  </div>
+<script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
